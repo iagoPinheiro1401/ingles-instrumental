@@ -1,8 +1,11 @@
+import styled from "styled-components"
+import Header from "../src/components/header/Header"
+
 function HomePage () {
   
   return (
     <div>
-      Hello World
+      <Header/>
     </div>
   )
 }
