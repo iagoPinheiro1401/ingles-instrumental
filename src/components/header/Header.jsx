@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-
 const HeaderContainer = styled.div`
     background-color: #439B4E;
     width: 100%;
@@ -8,6 +7,8 @@ const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
 `
 
 const Img = styled.img`
@@ -24,11 +25,9 @@ const Text = styled.h1`
 
 export default function Header() {
     return(
-        <>
             <HeaderContainer>
                 <Img src="ifcee.png" width="100px"/>
                 <Text>Métodos de aprendizagem da língua inglesa</Text>
             </HeaderContainer>
-        </>
     )
 }

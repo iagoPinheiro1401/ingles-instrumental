@@ -1,12 +1,17 @@
 import styled from "styled-components"
+
 import Header from "../src/components/header/Header"
+import Presentation from "../src/components/presentation/Presentation"
 
 function HomePage () {
   
   return (
-    <div>
+    <>
       <Header/>
-    </div>
+      <div>
+        <Presentation/>
+      </div>
+    </>
   )
 }
 
