@@ -3,6 +3,14 @@ import styled from "styled-components"
 import Header from "../src/components/header/Header"
 import Presentation from "../src/components/presentation/Presentation"
 import Method from "../src/components/methods/Methods"
+import CardPlatforms from "../src/components/platforms/CardPlatform"
+
+const PlatformsContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+`
 
 function HomePage () {
   
@@ -35,6 +43,15 @@ function HomePage () {
           text="The mini-courses perform an extremely important role in the process of learning a new language. You can focus on an specific topic that you want or like, in addition they are shorter e direct, what makes it really objective to people who have a more busy schedule."
           text2="Many of them are online, what makes it easier because you can watch the classes anywhere. They are more accessible than bigger courses and can be used as a complement from other learning methods."
         />
+        <Method
+          title="6. Platforms"
+          text="Learning English is a valuable skill that opens doors to global opportunities. If you're looking for educational resources to improve your English, the internet offers a wealth of options. Here are some websites that can be your allies on the learning journey."
+        />
+        <PlatformsContainer>
+          <CardPlatforms src="GPT.png" text=" ChatGPT can be used to practice English conversation, receive grammar corrections and get answers to questions about the language in a chat format."/>
+          <CardPlatforms src="cambly.png" text="Cambly offers the opportunity to practice English with live tutors through video calls. It is an excellent option for improving fluency and pronunciation, as well as receiving personalized guidance."/>
+          <CardPlatforms src="duolingo.png" text="Duolingo offers interactive lessons and exercises to improve English vocabulary, grammar and pronunciation. It is suitable for self-study and is an affordable option for developing basic skills."/>
+        </PlatformsContainer>
     </>
   )
 }
