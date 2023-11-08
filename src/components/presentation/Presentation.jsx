@@ -6,12 +6,13 @@ const MainContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 240px;
+    width: 100%;
 `
 
 const TextContainer = styled.h2`
-    text-align: center; /* Alinha o texto horizontalmente no centro */
+    text-align: center; 
     display: flex;
-    justify-content: center; /* Alinha o texto verticalmente no centro */
+    justify-content: center;
     align-items: center;
     width: 150vh;
 `
@@ -60,12 +61,12 @@ export default function Presentation() {
             <Img src="english.png"/>
             <PresentationContainer>
                 <Ul>
-                    <Li>Filmes e séries</Li>
-                    <Li>Músicas</Li>
-                    <Li>Livros</Li>
-                    <Li>Jogos</Li>
-                    <Li>Mini cursos online</Li>
-                    <Li>plataformas</Li>
+                    <Li>Movie and séries</Li>
+                    <Li>Musics</Li>
+                    <Li>Books</Li>
+                    <Li>Games</Li>
+                    <Li>Mini-courses</Li>
+                    <Li>Platforms</Li>
                 </Ul>
             </PresentationContainer>
         </MainContainer>
