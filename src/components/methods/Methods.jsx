@@ -7,6 +7,14 @@ const ContainerMain = styled.div`
     justify-content: center;
     margin: 80px 360px;
     gap: 20px;
+
+    @media (max-width: 1300px) {  
+        margin: 80px 100px;
+    }
+
+    @media (max-width: 550px) {  
+        margin: 80px 50px;
+    }
 `
 
 const Title = styled.span`

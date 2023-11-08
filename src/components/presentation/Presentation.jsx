@@ -14,7 +14,7 @@ const TextContainer = styled.h2`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150vh;
+    margin: 0 40px;
 `
 
 const H2 = styled.h2`
@@ -48,6 +48,16 @@ const Img = styled.img`
     position: relative;
     bottom: -104px;
     width: 900px;
+
+    @media (max-width: 1000px) {  
+        width: 500px;
+        bottom: -58px;
+    }
+
+    @media (max-width: 550px) {  
+        width: 310px;
+        bottom: -36px;
+    }
 `
 
 export default function Presentation() {

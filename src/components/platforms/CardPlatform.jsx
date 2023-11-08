@@ -8,6 +8,10 @@ const Content = styled.div`
 const Img = styled.img`
     width: 500px;
     height: 230px;
+
+    @media (max-width: 550px) {  
+        width: 300px;
+    }
 `
 
 const Card = styled.div`
@@ -20,6 +24,10 @@ const Card = styled.div`
     overflow: hidden;
     word-break: break-word;
     height: 350px;
+
+    @media (max-width: 550px) {  
+        width: 300px;
+    }
 `
 const Text = styled.p`
     padding: 20px 20px 40px 20px;

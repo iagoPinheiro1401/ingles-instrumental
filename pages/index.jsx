@@ -10,6 +10,11 @@ const PlatformsContainer = styled.div`
     justify-content: center;
     gap: 40px;
     margin-bottom: 40px;
+
+    @media (max-width: 1500px) {  
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 function HomePage () {
