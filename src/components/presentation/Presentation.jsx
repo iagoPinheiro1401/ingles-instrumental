@@ -60,7 +60,7 @@ const Img = styled.img`
     }
 `
 
-export default function Presentation() {
+export default function Presentation({ filme, musica, livro, jogo, curso, plata }) {
     return(
         <MainContainer>
             <TextContainer>
@@ -71,12 +71,12 @@ export default function Presentation() {
             <Img src="english.png"/>
             <PresentationContainer>
                 <Ul>
-                    <Li>Movie and séries</Li>
-                    <Li>Musics</Li>
-                    <Li>Books</Li>
-                    <Li>Games</Li>
-                    <Li>Mini-courses</Li>
-                    <Li>Platforms</Li>
+                    <Li filme={filme}>{filme}</Li>
+                    <Li musica={musica}>{musica}</Li>
+                    <Li livro={livro}>{livro}</Li>
+                    <Li jogo={jogo}>{jogo}</Li>
+                    <Li curso={curso}>{curso}</Li>
+                    <Li plata={plata}>{plata}</Li>
                 </Ul>
             </PresentationContainer>
         </MainContainer>

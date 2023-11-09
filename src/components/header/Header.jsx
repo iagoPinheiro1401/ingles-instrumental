@@ -1,4 +1,7 @@
 import styled from "styled-components"
+import { useState } from "react"
+
+import ButtonLanguage from "../buttons/buttonLanguage/ButtonLanguage"
 
 const HeaderContainer = styled.div`
     background-color: #439B4E;
@@ -39,11 +42,14 @@ const Text = styled.h1`
     }
 `
 
-export default function Header() {
+export default function Header({ onClick }) {
     return(
-            <HeaderContainer>
-                <Img src="ifcee.png"/>
-                <Text>Métodos de aprendizagem da língua inglesa</Text>
-            </HeaderContainer>
+        <>
+        <HeaderContainer>
+            <Img src="ifcee.png"/>
+            <Text>Métodos de aprendizagem da língua inglesa</Text>
+            <ButtonLanguage onClick={onClick}/>
+        </HeaderContainer>
+        </>
     )
 }
