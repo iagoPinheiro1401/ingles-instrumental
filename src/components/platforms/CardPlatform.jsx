@@ -33,11 +33,13 @@ const Text = styled.p`
     padding: 20px 20px 40px 20px;
 `
 
-export default function CardPlatforms({ src, text }) {
+export default function CardPlatforms({ src, text, href }) {
     return(
         <Content>
             <Card>
-                <Img src={src}/>
+                <a href={href}>
+                    <Img src={src}/>
+                </a>
                 <Text>{text}</Text>
             </Card>
         </Content>
