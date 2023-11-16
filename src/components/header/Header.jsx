@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import { useState } from "react"
 
 import ButtonLanguage from "../buttons/buttonLanguage/ButtonLanguage"
+import Menu from "../menu/Menu"
 
 const HeaderContainer = styled.div`
     background-color: #439B4E;
@@ -21,7 +21,6 @@ const HeaderContainer = styled.div`
 `
 
 const Img = styled.img`
-    margin: 0 350px 0 70px;
     position: relative;
     border-radius: 15px;
     width: 100px;
@@ -32,13 +31,29 @@ const Img = styled.img`
     }
 `
 
-const Text = styled.h1`
-    color: white;
-    font-weight: bold;
-    font-size: 50px;
+const Imgcontainer = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 
-    @media (max-width: 1200px) {  
-        display: none;
+const Line = styled.div`
+    height: 50px;
+    width: 2px;
+    background-color: black;
+`
+
+const ButtonsContainer = styled.div`
+    width: 200px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    right: 0;
+    margin-right: 20px;
+
+    @media (max-width: 450px) {  
+        margin-right: 50px;
     }
 `
 
@@ -46,9 +61,14 @@ export default function Header({ onClick }) {
     return(
         <>
         <HeaderContainer>
-            <Img src="ifcee.png"/>
-            <Text>Métodos de aprendizagem da língua inglesa</Text>
-            <ButtonLanguage onClick={onClick}/>
+            <Imgcontainer>
+                <Img src="ifcee.png"/>
+            </Imgcontainer>
+            <ButtonsContainer>
+                <ButtonLanguage onClick={onClick}/>
+                <Line/>
+                <Menu/>
+            </ButtonsContainer>
         </HeaderContainer>
         </>
     )

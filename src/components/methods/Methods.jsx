@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const ContainerMain = styled.div`
+const ContainerMain = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,9 +26,9 @@ const Text = styled.h3`
     font-weight: lighter;
 `
 
-export default function Method({ title, text, text2 }) {
+export default function Method({ title, text, text2, id }) {
     return(
-        <ContainerMain>
+        <ContainerMain id={id}>
             <Title>{title}</Title>
             <Text>{text}</Text>
             <Text>{text2}</Text>

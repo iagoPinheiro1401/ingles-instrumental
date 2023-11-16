@@ -9,7 +9,7 @@ const MainContainer = styled.div`
     width: 100%;
 `
 
-const TextContainer = styled.h2`
+const TextContainer = styled.section`
     text-align: center; 
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ const H2 = styled.h2`
     font-weight: lighter;
 `
 
-const PresentationContainer = styled.div`
+const PresentationContainer = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,16 +60,16 @@ const Img = styled.img`
     }
 `
 
-export default function Presentation({ filme, musica, livro, jogo, curso, plata }) {
+export default function Presentation({ filme, musica, livro, jogo, curso, plata, id, id2 }) {
     return(
         <MainContainer>
-            <TextContainer>
+            <TextContainer id={id}>
                 <H2>
                     Explore nosso site e descubra técnicas eficazes para aprender inglês. Aprimore suas habilidades com dicas práticas e recursos envolventes. Comece sua jornada de aprendizado conosco hoje. <br/>Let's get started!
                 </H2>
             </TextContainer>
             <Img src="english.png"/>
-            <PresentationContainer>
+            <PresentationContainer id={id2}>
                 <Ul>
                     <Li filme={filme}>{filme}</Li>
                     <Li musica={musica}>{musica}</Li>
