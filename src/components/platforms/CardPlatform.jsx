@@ -8,6 +8,7 @@ const Content = styled.div`
 const Img = styled.img`
     width: 500px;
     height: 230px;
+    object-fit: contain;
 
     @media (max-width: 550px) {  
         width: 300px;
@@ -23,7 +24,7 @@ const Card = styled.div`
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     word-break: break-word;
-    height: 350px;
+    height: 400px;
 
     @media (max-width: 550px) {  
         width: 300px;

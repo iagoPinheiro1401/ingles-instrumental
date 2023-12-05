@@ -5,8 +5,8 @@ import Header from "../src/components/header/Header"
 import Presentation from "../src/components/presentation/Presentation"
 import Method from "../src/components/methods/Methods"
 import CardPlatforms from "../src/components/platforms/CardPlatform"
-import Scroll from "../src/components/scroll/Scroll"
 import Menu from "../src/components/menu/Menu"
+import Informations from "../src/components/informations/Informations"
 
 const PlatformsContainer = styled.div`
     display: flex;
@@ -80,6 +80,7 @@ function HomePage () {
           <CardPlatforms href="https://www.cambly.com/english?lang=pt" src="cambly.png" text={language == true ? "O Cambly oferece a oportunidade de praticar o inglês com tutores ao vivo por meio de videochamadas. É uma opção excelente para melhorar a fluência e a pronúncia, além de receber orientação personalizada." : "Cambly offers the opportunity to practice English with live tutors through video calls. It is an excellent option for improving fluency and pronunciation, as well as receiving personalized guidance."}/>
           <CardPlatforms href="https://pt.duolingo.com/" src="duolingo.png" text={language == true ? " O Duolingo oferece lições interativas e exercícios para melhorar vocabulário, gramática e pronúncia em inglês. É ad autoestudo e é uma opção acessível para desenvolver habilidades básicas." :"Duolingo offers interactive lessons and exercises to improve English vocabulary, grammar and pronunciation. It is suitable for self-study and is an affordable option for developing basic skills."}/>
         </PlatformsContainer>
+        <Informations/>
         <Menu language={language} setLanguage={setLanguage}/>
         </>
   )
