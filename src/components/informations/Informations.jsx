@@ -8,31 +8,69 @@ const Container = styled.section`
     width: 100%;
 `
 
-const Text = styled.div`
-    width: 1000px;
+const TextContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    margin: 0 100px;
+
+    @media (max-width: 500px) {
+        margin: 0 25px;
+    }
 `
 
-export default function Informations() {
+const Text = styled.p`
+    font-size: 20px;
+`
+
+const Title = styled.h1`
+    font-size: 40px;
+
+    @media (max-width: 500px) {
+        font-size: 30px;
+    }
+`
+
+const Img = styled.img`
+    width: 70%;
+    height: auto;
+    display: block;
+
+    @media (max-width: 800px) {
+        width: 80%;
+    }
+
+    @media (max-width: 500px) {
+        width: 350px;
+    }
+`
+
+
+const Line = styled.div`
+    width: 30%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #439B4E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+`
+
+export default function Informations({ title, src, text1, text2, text3, text4, id }) {
     return(
-        <Container>
-            <Text>
-                <h1>Países que falam a língua inglesa</h1>
-                <p>
-                    A língua inglesa é conhecida como uma língua universal, que une povos e torna possível a comunicação em diversos lugares do mundo. É um idioma comumente usado em viagens, negócios e várias outras áreas. Mesmo que uma pessoa não fale inglês, ela usa muitas palavras no dia a dia, o que mostra quanta influência o idioma possui. 
-                    Uma pergunta comum é: quantos países falam inglês? A resposta parece simples de responder, basta checar as línguas oficiais de cada nação. Com essa lógica, encontramos 54 países que falam o inglês como língua nativa ou segundo idioma. 
-                </p>
-                <img src="port.png"/>
-                <p>
-                    No entanto, a resposta pode ficar incompleta, porque existem muitos países que as pessoas usam muito o inglês, mesmo não sendo uma língua oficial. Segundo dados da plataforma Statista, em 2023, há 1,5 bilhão de falantes do inglês — o número exato é de 1,456 bilhão. Esse número inclui os nativos ou pessoas que adquiriram o inglês como segunda língua.
-                    Os Estados Unidos têm uma população de 333 milhões de pessoas, sendo o país que possui o maior número de falantes da língua. Os resultados são de 2022, compartilhados pelo Banco Mundial.
-                    No ranking de línguas mais faladas do mundo, após o mandarim e o hindi, vem o inglês, em terceiro lugar. Por causa disso, os 54 países que têm inglês como língua oficial possuem uma grande diversidade linguística.
-                </p>
-            </Text>
+        <Container  id={id}>
+            <Line/>
+            <TextContainer>
+                <Title>{title}</Title>
+                <Text>{text1}</Text>
+                <Img src={src}/>
+                <Text>{text2}</Text>
+                <Text>{text3}</Text>
+                <Text>{text4}</Text>
+            </TextContainer>
         </Container>
     )
 }

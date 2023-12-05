@@ -69,6 +69,7 @@ export default function Menu() {
                 <Scroll href="#livro">Games</Scroll>
                 <Scroll href="#jogo">Mini-courses</Scroll>
                 <Scroll href="#curso">Platforms</Scroll>
+                <Scroll href="#info">Informations</Scroll>
             </SideBar>}
         </Container>
     )

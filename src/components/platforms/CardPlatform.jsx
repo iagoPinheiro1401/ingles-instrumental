@@ -8,7 +8,6 @@ const Content = styled.div`
 const Img = styled.img`
     width: 500px;
     height: 230px;
-    object-fit: contain;
 
     @media (max-width: 550px) {  
         width: 300px;
