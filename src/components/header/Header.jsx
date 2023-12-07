@@ -13,6 +13,7 @@ const HeaderContainer = styled.div`
     top: 0;
     left: 0;
     z-index: 2;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 1);
 
     @media (max-width: 1200px) {  
         justify-content: center;

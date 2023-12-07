@@ -33,7 +33,7 @@ function HomePage () {
       <Presentation
         id="home"
         id2="serie"
-        filme={language == true ? "Filmes e séries" : "Movies and serie"}
+        filme={language == true ? "Filmes e séries" : "Movies and TV serie"}
         musica={language == true ? "Músicas" : "Music"}
         livro={language == true ? "Livros" : "Book"}
         jogo={language == true ? "Jogos" : "Games"}
@@ -42,7 +42,7 @@ function HomePage () {
       />
       <Method 
         id="filme"
-        title={language == true ? "1. Filmes e séries" : "1. Movies and serie"}
+        title={language == true ? "1. Filmes e séries" : "1. Movies and TV serie"}
         text={language == true ? "Assistir a filmes e séries em inglês é uma maneira realmente divertida e eficaz de aprimorar suas habilidades linguísticas. Ao fazer isso, você se expõe a sotaques, vocabulário e diferentes entonações, o que o ajuda a melhorar sua compreensão auditiva e sua fala. Você também pode aprender gírias, expressões da língua e o idioma do dia a dia, que não são frequentemente ensinados em aulas tradicionais." : "Watching movies and TV series in English is a really fun and effective way to improve your language skills. As you do that, you expose yourself to accents, vocabulary and different intonations, helping you to get better at your listening and speaking. You can also learn slangs, language expressions and 'daily language' which are not frequently taught in tradicional classes."}
         text2={language == true ? "No entanto, para desfrutar desse método, é muito importante escolher o conteúdo adequado ao seu nível de aprendizado. Comece com legendas em inglês para entender o que está sendo dito, e quando se sentir mais confortável, tente assistir sem legendas. Lembre-se de que a constância é a chave, então reserve um tempo regular para praticar seu inglês com filmes e séries de TV" : "However, to enjoy this method, it's very important to choose the right content to your learning level. Start with subtitles in English to understand what has been said and when you feel more comfortable, try to watch without subtitles. Remember that constance is the key, so save some regular time to practice your English with movies e TV series."}
       />

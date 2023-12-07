@@ -34,7 +34,7 @@ const Title = styled.h1`
 `
 
 const Img = styled.img`
-    width: 70%;
+    width: 50%;
     height: auto;
     display: block;
 
