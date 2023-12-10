@@ -6,7 +6,7 @@ import Menu from "../menu/Menu"
 const HeaderContainer = styled.div`
     background-color: #439B4E;
     width: 100%;
-    height: 150px;
+    height: 100px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -17,18 +17,18 @@ const HeaderContainer = styled.div`
 
     @media (max-width: 1200px) {  
         justify-content: center;
-        height: 100px;
+        height: 60px;
     }
 `
 
 const Img = styled.img`
     position: relative;
-    border-radius: 15px;
-    width: 100px;
+    border-radius: 10px;
+    width: 80px;
 
     @media (max-width: 1200px) {  
         margin: 0;
-        width: 60px;
+        width: 45px;
     }
 `
 
@@ -43,11 +43,17 @@ const Line = styled.div`
     height: 50px;
     width: 2px;
     background-color: black;
+
+    @media (max-width: 500px) {  
+        height: 30px;
+    }
 `
 
 const ButtonsContainer = styled.div`
     width: 200px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     position: relative;
     right: 0;

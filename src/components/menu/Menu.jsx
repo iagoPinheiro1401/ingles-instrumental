@@ -20,7 +20,7 @@ const SideBar = styled(animated.div)`
 `
 
 const StyledIcon = styled(animated(IoMdAdd))`
-    font-size: 40px;
+    font-size: 33px;
     position: fixed;
     z-index: 2000;
     cursor: pointer;

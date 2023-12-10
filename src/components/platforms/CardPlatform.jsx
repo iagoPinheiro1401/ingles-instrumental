@@ -6,7 +6,7 @@ const Content = styled.div`
 `
 
 const Img = styled.img`
-    width: 500px;
+    width: 400px;
     height: 230px;
 
     @media (max-width: 550px) {  
@@ -19,7 +19,7 @@ const Card = styled.div`
     flex-direction: column;
     border: 1px solid #C9C9C9;
     border-radius: 20px;
-    width: 500px;
+    width: 400px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     word-break: break-word;
